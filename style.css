@@ -1,0 +1,218 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    line-height: 1.6;
+    color: steelblue;
+    /* background: lightgray; */
+}
+
+p {
+	font-size: .95em;
+    margin-bottom: 1.5em;
+}
+
+h2,
+h3,
+a {
+	color: steelblue;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* figure {
+    margin: 0;
+    line-height: 0;
+    position: relative;
+}
+
+figcaption {
+    font-size: .9em;
+    line-height: 1.5;
+    color: steelblue;
+    padding: 1em;
+    background: lightgray;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+} */
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+.main-header {
+    /* background: orange; */
+    margin-bottom: -20px;
+    
+}
+
+.main-nav {
+    list-style: none;
+    font-weight: bold;
+}
+
+.main-nav li {
+    margin-right: -5px;
+}
+
+.name {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.name a{
+    color: steelblue;
+}
+
+.name,
+.main-nav li {
+	text-align: center;
+	/* background: #fff; */
+	margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.headline {
+    margin-bottom: .5px;
+}
+
+.banner {
+    background-image: url(./images/header.jpg);
+    opacity: .3;
+    padding-top: 2em;
+	padding-bottom: 1.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: steelblue;
+}
+
+.container {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.main-footer {
+    text-align: center;
+    background: grey;
+    padding: 2em 0;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: steelblue;
+    text-transform: uppercase;
+}
+.name a:hover,
+.main-nav a:hover {
+	color: #0b649b;
+}
+
+.name a,
+.main-nav a {
+    padding: 10px 15px; 
+    display: inline-block;
+}
+
+.enjoy {
+    white-space: nowrap;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media (min-width: 789px) {
+    .wrap {
+        min-height: calc(100vh - 89px);
+
+    }
+
+    .main-header {
+        position: fixed;
+        background: white;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    body {
+        padding-top: 90px;
+    }
+    
+    .container {
+        width: 70%;
+        max-width: 1000px; 
+        margin: 0 auto;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    .main-nav li {
+        float: left;
+    }
+    
+    .name {
+        width: 240px;
+        float: left;
+        text-align: left;
+        left: 15px;
+        position: absolute;
+        top: 12px;
+    }
+    
+    .main-image {
+        width: 100%;
+        float: left;
+        margin-top: 5px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+
+    .tagline {
+        font-size: 1.4em;
+    }
+
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .col {
+        float: left;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .primary {
+        width: 50%;
+        text-align: left;
+    }
+
+    .secondary {
+        width: 50%;
+        text-align: center;
+    }
+
+    /* .tertiary {
+        width: 30%;
+        text-align: right;
+    } */
+}
