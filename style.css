@@ -60,15 +60,6 @@ figcaption {
     
 }
 
-.main-nav {
-    list-style: none;
-    font-weight: bold;
-}
-
-.main-nav li {
-    margin-right: -5px;
-}
-
 .name {
     font-size: 1.25em;
     text-transform: uppercase;
@@ -79,13 +70,6 @@ figcaption {
     color: steelblue;
 }
 
-.name,
-.main-nav li {
-	text-align: center;
-	/* background: #fff; */
-	margin-top: 6px;
-    margin-bottom: 6px;
-}
 
 .headline {
     margin-bottom: .5px;
@@ -100,7 +84,6 @@ figcaption {
     text-align: center;
     color: steelblue;
 }
-
 .container {
     padding-left: 1em;
     padding-right: 1em;
@@ -108,14 +91,43 @@ figcaption {
 .main-footer {
     text-align: center;
     background: grey;
-    padding: 2em 0;
+    /* padding: 2em 0; */
 }
+
+.enjoy {
+    white-space: nowrap;
+}
+
+/* /////Navigation////// */
 
 .main-nav a {
 	font-size: .95em;
 	color: steelblue;
     text-transform: uppercase;
 }
+
+.name,
+.main-nav li {
+	text-align: center;
+	/* background: #fff; */
+	margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.main-nav {
+    list-style: none;
+    font-weight: bold;
+}
+
+
+.footnote,
+.foot-nav li {
+	text-align: center;
+	/* background: #fff; */
+	margin-top: 6px;
+    margin-bottom: 6px;
+}
+
 .name a:hover,
 .main-nav a:hover {
 	color: #0b649b;
@@ -127,10 +139,19 @@ figcaption {
     display: inline-block;
 }
 
-.enjoy {
-    white-space: nowrap;
+.foot-nav {
+    list-style: none;
 }
 
+.footnote a,
+.foot-nav a {
+    padding: 10px 15px; 
+    display: inline-block;
+}
+
+.main-nav li {
+    margin-right: -10px;
+}
 
 /* ================================= 
   Media Queries
@@ -176,7 +197,33 @@ figcaption {
         position: absolute;
         top: 12px;
     }
-    
+
+    .main-footer {
+        position: relative;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+        width: 100%;
+        top: 20px;
+        z-index: 1000;
+    }
+
+    .footnote {
+        width: 240px;
+        float: left;
+        text-align: left;
+        left: 15px;
+        position: absolute;
+        top: 25px;
+    }
+
+    .foot-nav {
+        float: right;
+        margin-right: 100px;
+    }
+
+    .foot-nav li {
+        float: left;
+    }
+
     .main-image {
         width: 100%;
         float: left;
