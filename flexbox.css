@@ -12,8 +12,7 @@ body {
     flex-direction: column;
     margin: 0;;
     /* font-family: 'Playfair Display', serif; */
-    font-family: 'Roboto', sans-serif;
-    ;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: steelblue;
     background-color: whitesmoke;
@@ -32,7 +31,8 @@ h3 {
 h2 {
     margin-top: 10px;
     margin-bottom: 4px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 1.5em;
     color: rgba(34, 168, 125, 66);
 
 }
@@ -52,6 +52,7 @@ header {
 .main-header {
     font-family: 'Playfair Display', serif;
     color: white;
+    letter-spacing: 2px;
 }
 
 .main-nav li {
@@ -72,10 +73,14 @@ a:hover {
     background-color: white;
 }
 
-#banner-head{
+.banner-head{
     opacity: 1;
     color: white;
-    
+}
+
+.banner-space{
+    opacity: 1;
+    color: white;
 }
 
 .banner {
@@ -89,22 +94,33 @@ a:hover {
     background-position: center;
     background-size: 100%;
     text-align: center;
-    padding-top: 2em;
-    padding-bottom: 1.25em;
+    padding-top: 4em;
+    padding-bottom: 4em;
     margin: 0;
     color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+
 }
 
 .main-body {
     display: flex;
     flex-flow: column nowrap;
-    flex: 1 0 auto;
+    flex: 0 0 auto;
     min-height: auto;
+    justify-content: space-between;
+}
+
+.tertiary {
+    margin-top: 15px;
 }
 
 .about-body {
+    display: flex;
+    flex-flow: column nowrap;
     text-align: center;
-    flex: 1 0 auto;
+    flex: 0 0 auto;
     min-height: auto;
     background-color: white;
     margin-top: 0;
@@ -131,10 +147,14 @@ a:hover {
 
 .foot-nav li {
     margin-right: 5px;
+    font-family: 'Playfair Display', serif;
 }
 
 .footnote {
     word-wrap: nowrap;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif;
 }
 
 .primary,
@@ -154,6 +174,10 @@ a:hover {
 
     h1 {
         font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 3em;
     }
 
     .container {
@@ -178,27 +202,39 @@ a:hover {
         
     }
 
+    .banner{
+        justify-content: space-around;
+    }
+
+    .banner-space {
+        display: none;
+    }
+
     .main-body {
         flex-direction: row;
         padding: 15px;
         text-align: center;
-        align-items: stretch;
+        justify-content: center;
     }
 
     .primary {
         order: 1;
-        /* flex-grow: 2; */
+        flex-grow: 0;
         padding: 5px;
+        width: 34%;
     }
 
     .secondary {
         order: 0;
         padding: 5px;
+        width: 33%;
     }
 
     .tertiary {
+        margin-top: 0;
         padding: 5px;
         order: 2;
+        width: 33%;
     }
 
     .main-image {
