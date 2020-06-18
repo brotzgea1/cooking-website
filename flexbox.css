@@ -11,9 +11,13 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;;
-    font-family: helvetica, arial, sans-serif;
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Roboto', sans-serif;
+    ;
     line-height: 1.6;
     color: steelblue;
+    background-color: whitesmoke;
+    
 }
 
 h3 {
@@ -28,10 +32,13 @@ h3 {
 h2 {
     margin-top: 10px;
     margin-bottom: 4px;
+    font-family: 'Playfair Display', serif;
+    color: rgba(34, 168, 125, 66);
+
 }
 
 header {
-    background-color: lightslategray;
+    background-color: rgba(34, 168, 125, 66);
 }
 
 .container,
@@ -43,19 +50,21 @@ header {
 }
 
 .main-header {
-    color: steelblue;
+    font-family: 'Playfair Display', serif;
+    color: white;
 }
 
 .main-nav li {
     list-style: none;
     margin-top: 0;
     padding-right: 15px;
+    font-family: 'Playfair Display', serif;
 }
 
 
 a {
     text-decoration: none;
-    color: steelblue;
+    color: white;
 }
 
 a:hover {
@@ -65,10 +74,17 @@ a:hover {
 
 #banner-head{
     opacity: 1;
+    color: white;
+    
 }
 
 .banner {
-    background-image: url(./images/header.jpg);
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(./images/header.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -76,6 +92,7 @@ a:hover {
     padding-top: 2em;
     padding-bottom: 1.25em;
     margin: 0;
+    color: white;
 }
 
 .main-body {
@@ -89,6 +106,8 @@ a:hover {
     text-align: center;
     flex: 1 0 auto;
     min-height: auto;
+    background-color: white;
+    margin-top: 0;
 }
 
 .foot-nav {
@@ -99,7 +118,7 @@ a:hover {
 .main-footer {
     display: flex;
     justify-content: space-between;
-    background-color: lightslategray;
+    background-color: rgb(197, 201, 206);
     margin-top: 0;
 }
 
