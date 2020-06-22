@@ -74,15 +74,22 @@ a:hover {
     background-color: white;
 }
 
-#banner-head {
+#banner-one,
+#banner-two{
     color: white;
-    font-size: 3em;
+    font-size: 1.5em;
+    padding-right: 10px;
+    border-right: solid;
+}
+
+#banner-three{
+    color: white;
+    font-size: 1.5em;
 }
 
 .banner-head{
     color: white;
     font-size: 3em;
-    border-right: solid;
 }
 
 .banner-space{
@@ -103,12 +110,10 @@ a:hover {
     text-align: center;
     padding-top: 4em;
     padding-bottom: 4em;
-    margin: 0;
     color: white;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-
 }
 
 #welcome,
@@ -132,20 +137,6 @@ a:hover {
     margin-top: 15px;
 }
 
-/* .about-body {
-    display: flex;
-    flex-flow:  column nowrap;
-} */
-
-/* .about-main {
-    display: flex;
-    flex-flow: column nowrap;
-    text-align: center;
-    flex: 1 0 auto;
-    min-height: auto;
-    background-color: white;
-    margin-top: 0;
-} */
 
 .about-main,
 .recipe-main,
@@ -202,16 +193,6 @@ a:hover {
     width: 333px;
 }
 
-@media only screen and (max-width: 768px){
-    .header ul{
-        background-color: #fff;
-    }  
-    .header li a {
-    padding: 15px;
-    border-bottom: 1px dotted #ddd;
-  
-  }
-}
 
 /* ////////computer layout//////// */
 
@@ -250,10 +231,20 @@ a:hover {
 
     .banner{
         justify-content: space-around;
+        /* background-position: 100%;
+        padding-top: 4em;
+        padding-bottom: 4em; */
     }
 
-    .banner-head{
+    #banner-one,
+    #banner-two{
+        font-size: 3em;
         border-right: none;
+        padding-right: none;
+    }
+
+    #banner-three{
+        font-size: 3em;
     }
 
     .banner-space {
