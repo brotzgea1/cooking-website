@@ -8,14 +8,14 @@ html, body {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     margin: 0;;
     /* font-family: 'Playfair Display', serif; */
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: steelblue;
     background-color: whitesmoke;
+    display: flex;
+    flex-flow:  column nowrap;
     
 }
 
@@ -40,6 +40,7 @@ h2 {
 header {
     background-color: rgba(34, 168, 125, 66);
 }
+
 
 .container,
 .main-nav,
@@ -73,9 +74,15 @@ a:hover {
     background-color: white;
 }
 
-.banner-head{
-    opacity: 1;
+#banner-head {
     color: white;
+    font-size: 3em;
+}
+
+.banner-head{
+    color: white;
+    font-size: 3em;
+    border-right: solid;
 }
 
 .banner-space{
@@ -104,6 +111,15 @@ a:hover {
 
 }
 
+#welcome,
+#experience,
+#enjoy,
+#me,
+#recipe,
+#tips {
+    font-size: 2.5em;
+}
+
 .main-body {
     display: flex;
     flex-flow: column nowrap;
@@ -116,11 +132,28 @@ a:hover {
     margin-top: 15px;
 }
 
-.about-body {
+/* .about-body {
+    display: flex;
+    flex-flow:  column nowrap;
+} */
+
+/* .about-main {
     display: flex;
     flex-flow: column nowrap;
     text-align: center;
-    flex: 0 0 auto;
+    flex: 1 0 auto;
+    min-height: auto;
+    background-color: white;
+    margin-top: 0;
+} */
+
+.about-main,
+.recipe-main,
+.tips-main {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    flex: 1 0 auto;
     min-height: auto;
     background-color: white;
     margin-top: 0;
@@ -136,6 +169,7 @@ a:hover {
     justify-content: space-between;
     background-color: rgb(197, 201, 206);
     margin-top: 0;
+    flex-shrink: 0;
 }
 
 .foot-nav,
@@ -148,6 +182,7 @@ a:hover {
 .foot-nav li {
     margin-right: 5px;
     font-family: 'Playfair Display', serif;
+    padding-right: 5px;
 }
 
 .footnote {
@@ -165,6 +200,17 @@ a:hover {
 
 .main-image {
     width: 333px;
+}
+
+@media only screen and (max-width: 768px){
+    .header ul{
+        background-color: #fff;
+    }  
+    .header li a {
+    padding: 15px;
+    border-bottom: 1px dotted #ddd;
+  
+  }
 }
 
 /* ////////computer layout//////// */
@@ -206,6 +252,10 @@ a:hover {
         justify-content: space-around;
     }
 
+    .banner-head{
+        border-right: none;
+    }
+
     .banner-space {
         display: none;
     }
@@ -241,5 +291,9 @@ a:hover {
         max-width: 275px;
         height: auto;
         margin-top: 10px;
+    }
+
+    .foot-nav li {
+        padding-right: 15px;
     }
 }
