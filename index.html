@@ -8,18 +8,17 @@
         <title>Andrew's Kitchen</title>
     </head>
     <body>
-        <header>
-            <div class="container">
-                <h1 class="main-header">Andrew's Country Kitchen</h1>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="recipes.html">Recipes</a></li>
-                        <li><a href="tips.html">Tips</a></li>
-                    </ul>
-                </nav>   
-            </div>
+        <header class="container">
+            <h1 class="main-header">Andrew's Country Kitchen</h1>
+            <!-- <input type="checkbox"> -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="tips.html">Tips</a></li>
+                </ul>
+            </nav>   
         </header>     
         
         <div class="banner">
@@ -28,39 +27,48 @@
             <h2 id="banner-three">Flavor Focused</h2>
         </div>
 
-        <div class="main-body">
-            <div class="primary">
+        <main>
+            <article class="primary">
                 <h2 id="welcome">Welcome</h2>    
                 <p>Growing up in the South, I was essentially born and bred to be a food enthusiast. From crispy fried chicken and garlic mashed potatoes, to double-crusted, sweet and savory peach cobbler, there is just something about Southern cooking that cultivates comfort. My earliest and most joyful memories center around the kitchen and the smells of Southern cooking that include garlic, butter, and homemade biscuits.</p> 
                 <p>My love for flavor bloomed into a passion when I reached adulthood. Aside from being raised by a Southern mother, I spent time in an esteemed culinary program being trained in classical French cooking. This education allowed me to absorb various techniques that are applicable to just about any recipe, including my grandmother’s famous sweet potato casserole. The number of hours I have spent inside a kitchen, both in my home and in restaurants, has helped me to perfect classic recipes and led to a desire to share with others.</p> 
                 <p>The purpose of this page is dedicated to creating family inspired recipes, using farm fresh ingredients, that are flavor focused and hopefully, will establish your own lasting memories full of joy (and butter).</p>
-            </div>
-            <div class="secondary">
+            </article>
+            <article class="secondary">
                 <img src="images/shrimp.jpg" class="main-image" alt="Example">
                 <h2 id="experience">Experience</h2>
                 <p class="experience">My upbringing in Kentucky and my training in culinary arts has honed both my skills in the kitchen and my breadth of recipes. After years of working in restaurants, I decided to step away from the long hours, and equally long nights, to focus more on my family. However, my passion for cooking has translated into feeding my loved ones and expanding my collection of recipes. Here you will learn how to combine professional cooking tips and my personal experiences to create some of your own classic, Southern-inspired recipes. </p>
-            </div>
-            <div class="tertiary">
+            </article>
+            <article class="tertiary">
                 <img src="images/chicken.jpg" class="main-image" alt="Ex">
                 <h2 id="enjoy">Enjoy</h2>
                 <p>Nothing brings me more pleasure than preparing a well-cooked meal for my loved ones, and now I am extending that offer to you. Please come in, stay a while, and learn the secrets to cooking Southern comfort foods in your own kitchen. Afterall, Julia Child said it best, “People who love to eat are the best people.”</p>
+            </article>
+        </main>
+        <div class="newsletter">
+            <h3>Newsletter</h3>
+            <form id="form" action="" method="get" name="validate">
+                <input type="text" placeholder="Email" name="email"/>
+                <input type="submit" value="Submit" id="btn" />
+            </form>
+            <div id="invalid">
+                <p>Sorry, you have to provide a valid email.</p>
+            </div>
+            <div id="valid">
+                <p>Thank you!</p>
             </div>
         </div>
-        
-        <div>
-            <footer>
-                <div class="main-footer">
-                    <h3 class="footnote"><a href="#"></a>&copy;2020 Andrew's Kitchen.</h3>
-                    <nav>
-                        <ul class = "foot-nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="recipes.html">Recipes</a></li>
-                            <li><a href="tips.html">Tips</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </footer>
-        </div>    
+        <footer class="main-footer">
+            <h3 class="footnote"><a href="#"></a>&copy;2020 Andrew's Kitchen.</h3>
+            <nav>
+                <ul class = "foot-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="tips.html">Tips</a></li>
+                </ul>
+            </nav>
+        </footer>
+    <script src=scripts.js></script>    
     </body>
 </html>
