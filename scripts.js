@@ -17,14 +17,15 @@ function validation(){
 		non.style.display = "none";
 		return false;
 		}
-}
+};
 
 function ToggleNavItems(){
-	let navItems = document.querySelectorAll('nav > ul');
+	let navItems = document.querySelectorAll("nav > li");
 	for(let i=0; i < navItems.length; i++){
-		navItems[i].classList.toggle('visible-nav-items')
-	}
-};
+		navItems[i].classList.toggle("visible-nav-items");
+	};
+	console.log("hello")
+}
 
 
 
