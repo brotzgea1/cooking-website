@@ -1,4 +1,6 @@
 /* //////mobile layout/////// */
+
+/* General */
 * {
     box-sizing: border-box;
 }
@@ -24,9 +26,7 @@ h3 {
     padding-top: 5px;
 }
 
-.experience {
-    margin: 0 15px 0 15px;
-}
+
 
 h2 {
     margin-top: 10px;
@@ -37,14 +37,15 @@ h2 {
 
 }
 
+/* Header and Navigation */
+
 header {
     background-color: rgba(34, 168, 125, 66);
 }
 
 
 .container,
-.main-nav,
-.main-nav li {
+.main-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,21 +58,18 @@ header {
 }
 
 .main-nav li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
     margin-top: 0;
     padding-right: 15px;
     font-family: 'Playfair Display', serif;
 }
 
-.ingredient-list {
-    text-align: left;
+i {
+    cursor: pointer;
 }
-
-.ingredient-list li {
-    list-style: none;
-    text-align: left;
-}
-
 
 a {
     text-decoration: none;
@@ -83,6 +81,7 @@ a:hover {
     background-color: white;
 }
 
+/* Banner */
 #banner-one,
 #banner-two{
     color: white;
@@ -125,6 +124,8 @@ a:hover {
     justify-content: space-evenly;
 }
 
+/* Body */
+
 #welcome,
 #experience,
 #enjoy,
@@ -140,6 +141,10 @@ main {
     flex: 0 0 auto;
     min-height: auto;
     justify-content: space-between;
+}
+
+.experience {
+    margin: 0 15px 0 15px;
 }
 
 .tertiary {
@@ -159,19 +164,26 @@ main {
     margin-top: 0;
 }
 
-.foot-nav {
+.ingredient-list {
+    text-align: left;
+}
+
+.ingredient-list li {
     list-style: none;
-    margin-left: 0;
+    text-align: left;
 }
 
-.main-footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(197, 201, 206);
-    margin-top: 0;
-    flex-shrink: 0;
+.primary,
+.secondary,
+.tertiary {
+    text-align: center;
 }
 
+.main-image {
+    width: 333px;
+}
+
+/* Newsletter */
 .newsletter {
     display: flex;
     flex-flow: column nowrap;
@@ -200,6 +212,21 @@ main {
     display: none;
 }
 
+/* Footer */
+
+.foot-nav {
+    list-style: none;
+    margin-left: 0;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(197, 201, 206);
+    margin-top: 0;
+    flex-shrink: 0;
+}
+
 .foot-nav,
 .foot-nav li {
     display: flex;
@@ -220,15 +247,7 @@ main {
     font-family: 'Playfair Display', serif;
 }
 
-.primary,
-.secondary,
-.tertiary {
-    text-align: center;
-}
 
-.main-image {
-    width: 333px;
-}
 
 
 /* ////////computer layout//////// */

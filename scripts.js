@@ -19,6 +19,13 @@ function validation(){
 		}
 }
 
+function ToggleNavItems(){
+	let navItems = document.querySelectorAll('nav > ul');
+	for(let i=0; i < navItems.length; i++){
+		navItems[i].classList.toggle('visible-nav-items')
+	}
+};
+
 
 
 
