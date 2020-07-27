@@ -1,1 +1,3 @@
 # cooking-website
+
+I used flexbox for the layout of the website. If I had more time I would have switched it to a grid/flexbox hybrid, and I may still do so in the future.  I am using a mobile-first approach and a hamburger menu that uses javascript to collapse and open.  I'm also using javascript to verify email for my Newsletter, which takes in both name and email address. It displays either an error message or a thank you message depending on success of email validation. 
