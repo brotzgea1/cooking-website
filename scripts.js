@@ -1,3 +1,5 @@
+// ///// Email Validation///////////
+
 document.getElementById("form").addEventListener("submit", validation);
  
 function validation(){
@@ -18,6 +20,7 @@ function validation(){
 		return false;
 		}
 };
+////////Hamburger Menu////////////
 
 function ToggleNavItems(){
 	let navItems = document.querySelectorAll("nav > li");
