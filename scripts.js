@@ -23,9 +23,9 @@ function validation(){
 ////////Hamburger Menu////////////
 
 function ToggleNavItems(){
-	let navItems = document.querySelectorAll("nav > li");
+	let navItems = document.getElementsByClassName("main-nav");
 	for(let i=0; i < navItems.length; i++){
-		navItems[i].classList.toggle("visible-nav-items");
+		navItems[i].classList.toggle("visible-nav-item");
 	};
 	console.log("hello")
 }

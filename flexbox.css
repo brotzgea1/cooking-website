@@ -44,11 +44,14 @@ header {
 }
 
 
-.container,
-.main-nav {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.main-nav {
+    display: none;
 }
 
 .main-header {
@@ -59,21 +62,23 @@ header {
 
 
 .main-nav li {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     list-style: none;
     margin-top: 0;
     padding-right: 15px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif; 
 }
 
-.visible-nav-items {
+.visible-nav-item {
     display: flex;
 }
 
 i {
     cursor: pointer;
+    color: white;
+    padding-bottom: 10px;
 }
 
 a {
@@ -279,9 +284,14 @@ main {
         flex-direction: row;
     }
 
+    i {
+        visibility: hidden;
+    }
+
     .main-nav {
+        display: flex;
+        flex-flow: row nowrap;
         width: auto;
-        flex-wrap: nowrap;
     }
 
     .main-nav li {

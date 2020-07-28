@@ -6,19 +6,21 @@
         <link rel="stylesheet" href="normalize.css">
         <link rel= "stylesheet" href="flexbox.css">
         <title>Andrew's Kitchen</title>
+        <script src="https://kit.fontawesome.com/62c0730808.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <div class="container">
                 <h1 class="main-header">Andrew's Country Kitchen</h1>
-                    <nav class="main-nav">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="recipes.html">Recipes</a></li>
-                            <li><a href="tips.html">Tips</a></li>
-                        </ul>
-                    </nav>
+                <i class="fa fa-bars" aria-hidden="true" onclick="ToggleNavItems()"></i>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="tips.html">Tips</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
         
@@ -28,20 +30,39 @@
 
         <div class="tips-main">
             <h2 id="tips">Tips</h2>
+            <h3>Cookware</h3>
+            <span>Cast Iron Skillet</span>
+            <p>Properly utilizing a cast iron skillet is probably the easiest way of stepping up your cook game.  It makes a huge difference in terms of both flavor and ease of cooking.  Not to mention they are incredibly easy to clean - just wipe out excess oil and debris with a towell.  Don't fotget to season it when you first get it by heating up oil in the pan with nothing else in it then remove excess oil once it cools.</p>
+            
         </div>
 
-        <div>
-            <footer>
-                <div class="main-footer">
-                    <h3 class="footnote"><a href="#"></a>&copy;2020 Andrew's Kitchen.</h3>
-                    <nav>
-                        <ul class = "foot-nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="recipes.html">Recipes</a></li>
-                            <li><a href="tips.html">Tips</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </footer>
-        </div>    
+        <div class="newsletter">
+            <h3>Newsletter</h3>
+            <form id="form" action="" method="get" name="validate">
+                <input type="text" placeholder="Email" name="email"/>
+                <input type="submit" value="Submit" id="btn" />
+            </form>
+            <div id="invalid">
+                <p>Sorry, you have to provide a valid email.</p>
+            </div>
+            <div id="valid">
+                <p>Thank you!</p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="main-footer">
+                <h3 class="footnote"><a href="#"></a>&copy;2020 Andrew's Kitchen.</h3>
+                <nav>
+                    <ul class = "foot-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="tips.html">Tips</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer> 
+        <script src=scripts.js></script>    
+    </body>
+</html>     

@@ -6,19 +6,21 @@
         <link rel="stylesheet" href="normalize.css">
         <link rel= "stylesheet" href="flexbox.css">
         <title>Andrew's Kitchen</title>
+        <script src="https://kit.fontawesome.com/62c0730808.js" crossorigin="anonymous"></script>
     </head>
     <body class="about-body">
         <header>
             <div class="container">
                 <h1 class="main-header">Andrew's Country Kitchen</h1>
-                    <nav class="main-nav">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="recipes.html">Recipes</a></li>
-                            <li><a href="tips.html">Tips</a></li>
-                        </ul>
-                    </nav>
+                <i class="fa fa-bars" aria-hidden="true" onclick="ToggleNavItems()"></i>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="tips.html">Tips</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
         
@@ -30,21 +32,33 @@
             <h2 id="me">About Me</h2>
             <p>I first started cooking with my mom as a little boy, helping to make dinners for our family just about every week. Holidays in my home were centered around food and classic recipes that were passed down from generation to generation. My mother unquestionably blossomed my passion for cooking and desire for good food. After getting a little older, I would cook food for my friends in high school when we would all get together. Later, I went to Sullivan University’s culinary program, where I graduated in just a year from a program that is nationally ranked and was the starting point for several of Louisville’s best chefs. Afterwards, I spent 8+ years working in various restaurants around Louisville, Kentucky, including the restaurant that consistently wins best French food in the city – Brasserie Provence. I have honed my skills over the years and cultivated a love for well-cooked, flavorful food. Even though I no longer work in restaurants, I am still a gifted chef who finds pleasure in sharing some of the lessons I have learned throughout the years with others.</p>
         </div>
+        
+        <div class="newsletter">
+            <h3>Newsletter</h3>
+            <form id="form" action="" method="get" name="validate">
+                <input type="text" placeholder="Email" name="email"/>
+                <input type="submit" value="Submit" id="btn" />
+            </form>
+            <div id="invalid">
+                <p>Sorry, you have to provide a valid email.</p>
+            </div>
+            <div id="valid">
+                <p>Thank you!</p>
+            </div>
+        </div>
 
-
-        <div>
-            <footer>
-                <div class="main-footer">
-                    <h3 class="footnote"><a href="#"></a>&copy;2020 Andrew's Kitchen.</h3>
-                    <nav>
-                        <ul class = "foot-nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="recipes.html">Recipes</a></li>
-                            <li><a href="tips.html">Tips</a></li> 
-                        </ul>
-                    </nav>
-                </div>
-            </footer>
-         </div>  
+        <footer>
+            <div class="main-footer">
+                <h3 class="footnote"><a href="#"></a>&copy;2020 Andrew's Kitchen.</h3>
+                <nav>
+                    <ul class = "foot-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="tips.html">Tips</a></li> 
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    <script src=scripts.js></script>  
     </body>
