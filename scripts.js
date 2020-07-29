@@ -27,8 +27,33 @@ function ToggleNavItems(){
 	for(let i=0; i < navItems.length; i++){
 		navItems[i].classList.toggle("visible-nav-item");
 	};
-	console.log("hello")
-}
+};
+
+
+
+function ToggleCardInfo(){
+	let cardItems = document.getElementsByClassName("card-info");
+	for(let i=0; i < cardItems.length; i++){
+		cardItems[i].classList.toggle("visible-card-info");
+	};
+	expandCard();
+};
+
+function expandCard(){
+	let card = document.getElementsByClassName("card");
+	for(let i=0; i < card.length; i++){
+		card[i].style.width = "90%";
+		}
+};
+
+function collapseCard(){
+	let card = document.getElementsByClassName("card");
+	for(let i=0; i < card.length; i++){
+		card[i].style.width = "20%";
+	}
+	console.log("hello");
+};
+
 
 
 
